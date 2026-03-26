@@ -1,0 +1,37 @@
+Create a new stream IndentStream and I/O
+manipulators indent and unindent with the
+following properties.
+⚫ Each line output to an IndentStream is indented by
+a given amount.
+⚫ Inserting indent or unindent into a stream
+increases or decreases the indent level by 4.
+
+
+For example,
+IndentStream ins(cout);
+ins << "int" << endl;
+ins << fib(int n) {" << indent << endl;
+ins << "if (n == 0) return 0;" << endl;
+ins << "if (n == 1) return 1;" << endl;
+ins << "return fib(n-2) + fib(n-1);" << unindent << endl;
+ins << "}" << endl;
+will output
+int
+fib(int n) {
+if (n == 0) return 0;
+if (n == 1) return 1;
+return fib(n-2) + fib(n-1);
+}
+
+
+As described in class, almost all the work will be
+done by creating an IndentStreamBuf class and
+redefining its overflow method. Just about all
+IndentStream will do is set its stream buffer to an
+appropriate IndentStreamBuf in the constructor.
+⚫ You will not want to have an actual memory buffer in
+your IndentStreamBuf, so your overflow method will get
+called on each character
+⚫ Useful link
+⚫ http://www.angelikalanger.com/IOStreams/Excerpt/excerpt.htm
+

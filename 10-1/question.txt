@@ -1,0 +1,3 @@
+Improve our promise and future
+implementation from last quarter with an
+atomic_flag

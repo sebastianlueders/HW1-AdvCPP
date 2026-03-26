@@ -1,5 +1,5 @@
 #ifndef MY_PROMISE_H
-#  define MY_PROMISE_H
+#define MY_PROMISE_H
 #include<memory>
 #include<thread>
 #include<mutex>

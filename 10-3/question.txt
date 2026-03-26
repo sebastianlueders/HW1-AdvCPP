@@ -1,0 +1,47 @@
+This problem, originally given by Stuart Kurtz, will
+expose you to some real-world I/O challenges. Use
+getline() on your input stream to process a line at a
+time.
+⚫ Use either std::regex or CTRE
+⚫ For extra credit, try both and compare (see ex. 11-3)
+⚫ You will likely want to look up ifstream for doing file
+I/O if you aren’t familiar with it already.
+
+While the political debate over the role of
+anthropogenic forcing factors has on global warming
+rages, the hurricanes in the Atlantic rage on. The
+destructiveness of recent year's storms has been
+given as evidence for global warming. A serious
+problem in evaluating this is the extreme variability
+in the number and strength of hurricanes over time.
+The NOAA has a good (not perfect) data set that
+records hurricanes since 1851. What I want you to
+do is write a program that will attempt to analyze the
+strength of each hurricane season based on NOAA
+data. 
+
+We will use the following easily computed aggregate
+measure
+⚫ The familiar scale of hurricane strength giving Hurricane
+category based on its windspeed is called the Saffir-
+Simpson scale
+⚫ The windspeed range for each category is available on Wikipedia
+⚫ I want you to measure the aggregate storm activity in
+Saffir-Simpson days as follows
+⚫ The NOAA data has four daily sustained wind speed readings for
+each storm, given in knots
+⚫ Map each wind speed to the Saffir-Simpson scale
+⚫ Divide each such entry by 4.0, and add it to the year's total (each
+entry is taken as a surrogate for 1/4 of a day's total activity)
+
+Historical data on hurricane strength is given in the
+Canvas file hurdat_atlantic_1851-2011.txt
+⚫ An explanation of the format of the data can be found in the Hurdat format.pdf
+file on Canvas
+⚫ This data set is pretty typical for scientific datasets accumulated
+over many years -- it is an ASCII version of a punch-card set.
+⚫ Your assignment is to write a program that computes and
+prints a table of the annual Saffir-Simpson day totals for
+each year from the above data
+⚫ You can use either std::regex or CTRE
+

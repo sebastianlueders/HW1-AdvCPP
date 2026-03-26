@@ -1,0 +1,13 @@
+Use a regex to extract all of numbers with a
+decimal point from
+⚫ "Here are some numbers: 1.23, 4, 5.6, 7.89"
+⚫ Use capture groups to generate the following
+output
+⚫ 1 is before the decimal and 23 is after the decimal
+5 is before the decimal and 6 is after the decimal
+7 is before the decimal and 89 is after the decimal
+⚫ For full credit, implement with both std::regex
+and CTRE
+⚫ 5 points each
+
+
