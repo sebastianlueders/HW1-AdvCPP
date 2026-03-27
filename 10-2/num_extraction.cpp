@@ -31,8 +31,7 @@ double extractAndPrintCTRE(std::string_view line)
 }
 
 double extractAndPrintRE(std::string_view line)
-{
-    
+{   
     auto startTime = std::chrono::high_resolution_clock::now();
 
     std::regex nums(R"((\d+)\.(\d+))");
